@@ -117,15 +117,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="image1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="heart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="heart2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="heart-png-44644.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
