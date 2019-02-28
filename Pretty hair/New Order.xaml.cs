@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Pretty_hair
 {
-    /// <summary>
-    /// Interaction logic for New_Order.xaml
-    /// </summary>
     public partial class New_Order : Page
     {
         public New_Order()
@@ -49,7 +46,6 @@ namespace Pretty_hair
         private void Image_MouseLeave(object sender, MouseEventArgs e)
         {
             Image img = ((Image)sender);
-            // Height="86" Width="109"
 
             img.Height = img.Height / 1.1;
             img.Width = img.Height / 1.1;
@@ -58,7 +54,6 @@ namespace Pretty_hair
         private void Image_MouseEnter(object sender, MouseEventArgs e)
         {
             Image img = ((Image)sender);
-            // Height="86" Width="109"
             img.Height = img.Height * 1.1;
             img.Width = img.Height * 1.1;
         }

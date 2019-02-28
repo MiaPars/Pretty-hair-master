@@ -10,6 +10,7 @@ namespace Pretty_hair
     {
         public Controller()
         {
+
         }
     }
 }
