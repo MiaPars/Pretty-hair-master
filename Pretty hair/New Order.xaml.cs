@@ -20,10 +20,8 @@ namespace Pretty_hair
     /// </summary>
     public partial class New_Order : Page
     {
-        Controller controller;
-        public New_Order(Controller controller)
+        public New_Order()
         {
-            this.controller = controller;
             InitializeComponent();
         }
 

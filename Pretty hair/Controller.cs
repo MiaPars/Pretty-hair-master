@@ -8,18 +8,8 @@ namespace Pretty_hair
 {
     public class Controller
     {
-        MainWindow start;
-        New_Order mainPage;
-
-        public Controller(MainWindow v)
+        public Controller()
         {
-            start = v;
-            mainPage = new New_Order(this);
-        }
-
-        public void OpenMainWindow()
-        {
-            start.Content = mainPage;
         }
     }
 }
