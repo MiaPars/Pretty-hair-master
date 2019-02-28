@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pretty hair", "Pretty hair\Pretty hair.csproj", "{63B3E5AB-FD04-41B1-8984-5A4284F28784}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D03C8D45-1D8E-4B63-985E-B95A907DA293}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Mia\Desktop\image2.jpg = C:\Users\Mia\Desktop\image2.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

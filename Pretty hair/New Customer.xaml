@@ -13,16 +13,17 @@
             <ColumnDefinition Width="7*"/>
             <ColumnDefinition Width="193*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Navn" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.852,2.519" Margin="35.738,63,0,0" Width="131" Grid.Column="1"/>
-        <Label Content="Town" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,322,0,0" RenderTransformOrigin="0.625,3.205"/>
-        <Label Content="ZIP" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,224,0,0"/>
-        <Label Content="Addresse" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,137,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,325,0,0"/>
+        <Label Content="Name" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="4.852,2.519" Margin="35.738,63,0,0" Width="131" Grid.Column="1"/>
+        <Label Content="CustomerTown" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,322,0,0"/>
+        <Label Content="CustomerZIP" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,224,0,0"/>
+        <Label Content="Address" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,137,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,322,0,0"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,227,0,0"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,141,0,0"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,67,0,0"/>
-        <Label Content="Tlf." HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,398,0,0" RenderTransformOrigin="0.625,3.205"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,398,0,0"/>
+        <Button Content="Register Customer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Grid.Column="1" Margin="458,103,0,0" Click="Button_Click"/>
+        <Label Content="CustomerTelephone" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.793,1.19" Grid.Column="1" Margin="0,383,0,0" Width="149"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,395,0,0"/>
 
     </Grid>
 </Page>

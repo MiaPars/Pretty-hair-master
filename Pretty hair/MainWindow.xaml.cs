@@ -20,10 +20,14 @@ namespace Pretty_hair
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        Controller controller;
         public MainWindow()
         {
             InitializeComponent();
-            this.Content = new New_Order();
+            
+            controller = new Controller(this);
+            controller.OpenMainWindow();
         }
     }
 }

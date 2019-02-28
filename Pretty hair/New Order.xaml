@@ -15,7 +15,7 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Button Margin="219,28,227,193" Click="Button_Click" BorderBrush="#FFFFD6E0" Style="{DynamicResource ButtonStyle1}">
+        <Button Margin="219,28,227,193" Click="Button_Click" BorderBrush="#FFFFD6E0" Style="{DynamicResource ButtonStyle3}">
 
             <Button.Background>
                 <ImageBrush Stretch="None"/>
@@ -41,7 +41,28 @@
             </StackPanel>
 
         </Button>
-        <TextBox Name="Find_Customer_Textbox" GotFocus="Textbox_GotFocus" HorizontalAlignment="Left" Height="23" Margin="242,212,0,0" TextWrapping="Wrap" Text="Customer ID" VerticalAlignment="Top" Width="100" TextChanged="Find_Customer_Textbox_TextChanged" Background="#FFFFCAF8" FontFamily="Gabriola" FontSize="18"/>
+
+        <Button Margin="46,156,429,114" Background="#FFFFD6E0" BorderBrush="#FFFFD6E0" Click="Button_Click_1" Style="{DynamicResource ButtonStyle4}">
+            <StackPanel Height="78" Width="193" Background="#FFFFD6E0" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <Image Source ="heart-png-44644.png" Height="45" Margin="0,0,95.2,0" MouseEnter="Image_MouseEnter_1" MouseLeave="Image_MouseLeave_1"/>
+                <TextBlock TextWrapping="Wrap" Text="Register Customer" Margin="0,0,10.2,0" FontFamily="Gabriola" FontSize="18"/>
+
+            </StackPanel>
+
+        </Button>
+
+
+
+        <TextBox Name="Find_Customer_Textbox" GotFocus="Textbox_GotFocus" HorizontalAlignment="Left" Height="23" Margin="248,184,0,0" TextWrapping="Wrap" Text="Customer ID" VerticalAlignment="Top" Width="100" TextChanged="Find_Customer_Textbox_TextChanged" Background="#FFFFCAF8" FontFamily="Gabriola" FontSize="18"/>
+        <Label x:Name="LabelTryAgain" Content="Try Again" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="261,220,0,0" Width="125" FontFamily="Gabriola" FontSize="20" />
 
     </Grid>
 </Page>
