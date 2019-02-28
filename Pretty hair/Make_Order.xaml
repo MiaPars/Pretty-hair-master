@@ -9,15 +9,12 @@
       Title="Make_Order">
 
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,130,0,0"/>
-        <Label Content="Order Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,118,0,0" Width="154"/>
+        <TextBox Name="OrderDate_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,130,0,0"/>
+        <Label Content="Order Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,127,0,0" Width="154"/>
         <Label Content="Delivery Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,185,0,0" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,197,0,0"/>
-        <Label Content="Product Type ID" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="55,0,0,127" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,247,0,0"/>
-        <Label Content="Quantity" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="6.51,8.679" Margin="55,305,0,0" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,305,0,0"/>
-        <Label Content="Order" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,72,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,75,0,0"/>
+        <TextBox Name="DeliveryDate_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,197,0,0"/>
+        <Label Content="Customer ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,72,0,0"/>
+        <TextBox Name="CustomerID_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="209,75,0,0"/>
+        <Button Name="MakerOrder_Button" Content="Make Order" HorizontalAlignment="Left" Margin="400,104,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
     </Grid>
 </Page>

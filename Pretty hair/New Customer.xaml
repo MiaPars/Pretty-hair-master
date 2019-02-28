@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Pretty_hair"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="400" d:DesignWidth="600"
       Title="New_Customer">
 
     <Grid>
@@ -17,13 +17,13 @@
         <Label Content="CustomerTown" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,322,0,0"/>
         <Label Content="CustomerZIP" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,224,0,0"/>
         <Label Content="Address" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="36,137,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,322,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,227,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,141,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,67,0,0"/>
-        <Button Content="Register Customer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Grid.Column="1" Margin="458,103,0,0" Click="Button_Click"/>
-        <Label Content="CustomerTelephone" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.793,1.19" Grid.Column="1" Margin="0,383,0,0" Width="149"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,395,0,0"/>
+        <TextBox Name="Town_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,322,0,0"/>
+        <TextBox Name="ZIP_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,227,0,0"/>
+        <TextBox Name="Address_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,141,0,0"/>
+        <TextBox Name="Name_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="172,67,0,0"/>
+        <Button Content="Register Customer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="155" Grid.Column="1" Margin="382.667,122,0,0" Click="Button_Click"/>
+        <Label Content="CustomerTelephone" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.793,1.19" Margin="21,373,0,0" Width="149" Grid.ColumnSpan="2"/>
+        <TextBox Name="Telephone_Textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1" Margin="171.667,377,0,0"/>
 
     </Grid>
 </Page>

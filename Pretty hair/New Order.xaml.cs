@@ -17,17 +17,10 @@ namespace Pretty_hair
 {
     public partial class New_Order : Page
     {
-        Make_Order makeOrder = new Make_Order();
-        New_Customer newCustomer = new New_Customer();
-
-        Controller controller;
-        public New_Order(Controller controller)
+        DB_Controller con = new DB_Controller();
+        public New_Order()
         {
-
-            this.controller = controller;
             InitializeComponent();
-            LabelTryAgain.Visibility = Visibility.Hidden;
-
         }
 
         private void Textbox_GotFocus(object sender, RoutedEventArgs e)
@@ -47,15 +40,11 @@ namespace Pretty_hair
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (controller.CheckCustomerInDatabase(Convert.ToInt32(Find_Customer_Textbox.Text)) == true)
-            {
-                Application.Current.MainWindow.Content = makeOrder;
-            }
-            else
-            {
-                Application.Current.MainWindow.Content = this;
-                LabelTryAgain.Visibility = Visibility.Visible;
-            }
+            string text = Find_Customer_Textbox.Text;
+            Customer customer = con.FindCustomer(text);
+            Application.Current.MainWindow.Content = new Make_Order(text);
+
+
         }
 
         private void Image_MouseLeave(object sender, MouseEventArgs e)
@@ -75,7 +64,7 @@ namespace Pretty_hair
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Application.Current.MainWindow.Content = newCustomer;
+            Application.Current.MainWindow.Content = new New_Customer();
         }
 
         private void Image_MouseEnter_1(object sender, MouseEventArgs e)

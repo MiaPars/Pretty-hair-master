@@ -16,21 +16,13 @@ using System.Windows.Shapes;
 namespace Pretty_hair
 {
     /// <summary>
-    /// Interaction logic for New_Customer.xaml
+    /// Interaction logic for AddItemsToOrder.xaml
     /// </summary>
-    public partial class New_Customer : Page
+    public partial class AddItemsToOrder : Page
     {
-        DB_Controller controller = new DB_Controller();
-        public New_Customer()
+        public AddItemsToOrder()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            controller.AddCustomer(Name_Textbox.Text, Address_Textbox.Text, ZIP_Textbox.Text, Town_Textbox.Text, Telephone_Textbox.Text);
-
-            Application.Current.MainWindow.Content = new New_Order();
         }
     }
 }

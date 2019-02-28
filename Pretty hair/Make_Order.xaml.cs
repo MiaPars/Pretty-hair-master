@@ -20,10 +20,19 @@ namespace Pretty_hair
     /// </summary>
     public partial class Make_Order : Page
     {
-        public Make_Order()
+        DB_Controller controller = new DB_Controller();
+        public Make_Order(string ID)
         {
             InitializeComponent();
-            
+            CustomerID_Textbox.Text = ID;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime b = DateTime.Parse(OrderDate_Textbox.Text);
+            DateTime d = DateTime.Parse(DeliveryDate_Textbox.Text);
+            controller.CreateNewOrder(b, d, CustomerID_Textbox.Text);
+            Application.Current.MainWindow.Content = new AddProductToOrder();
         }
     }
 }
