@@ -8,18 +8,27 @@ namespace Pretty_hair
 {
     public class Controller
     {
-        MainWindow start;
+        MainWindow main;
         New_Order mainPage;
 
         public Controller(MainWindow v)
         {
-            start = v;
             mainPage = new New_Order(this);
+            main = v;
         }
 
         public void OpenMainWindow()
         {
-            start.Content = mainPage;
+            main.Content = mainPage;
+        }
+
+        public bool CheckCustomerInDatabase(int CustomerID)
+        {
+            return false;
+        }
+        public void CreateCustomer(string name, string address, int ZIP, string Town, int TelephoneNumber)
+        {
+
         }
     }
 }

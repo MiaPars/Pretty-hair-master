@@ -23,6 +23,7 @@ namespace Pretty_hair
         public Make_Order()
         {
             InitializeComponent();
+            
         }
     }
 }
